@@ -393,7 +393,7 @@ html, body {
   font-size: 5rem; position: relative; cursor: pointer; transition: border-color .3s;
 }
 .about-portrait:hover { border-color: var(--gold); }
-.about-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: none; }
+.about-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
 .about-portrait-label { text-align: center; font-size: .68rem; color: rgba(212,160,26,.5); letter-spacing: .1em; text-transform: uppercase; }
 .quote-block {
   border-left: 3px solid var(--gold); padding: 12px 18px; margin: 16px 0;
@@ -880,12 +880,10 @@ html, body {
           <div class="about-portrait-wrap">
             <div class="pg-title">About BAMI</div>
             <p class="pg-sub">A life built inside LASU's halls — in service, in struggle, in solidarity.</p>
-            <div class="about-portrait" onclick="triggerBamiPhoto()" title="Click to upload BAMI's photo">
-              🎓
-              <img id="about-portrait-img" class="bami-photo-all" alt="BAMI"/>
-            </div>
-            <div class="about-portrait-label">Tap portrait to upload photo</div>
-            <div class="quote-block">
+              <div class="about-portrait">
+            <img src="https://i.ibb.co/99WCCZNn/IMG-20260506-WA0006.jpg" alt="IMG 20260506 WA0006" border="0">
+           </div>
+           <div class="quote-block">
               "I am not just a candidate — I am a product of this university's struggle and resilience.
               Every policy I fight for, every association I joined, every student I stood up for
               brought me to this moment."
